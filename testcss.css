@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css2?family=Comic+Neue);
+
+html {
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(17,64,34,1) 0%, rgba(61,254,26,1) 100%); 
+    /*background: rgb(2,0,36);
+    background: -moz-linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(17,64,34,1) 0%, rgba(61,254,26,1) 100%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(17,64,34,1) 0%, rgba(61,254,26,1) 100%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(17,64,34,1) 0%, rgba(61,254,26,1) 100%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);*/
+    display: flex;
+    justify-content: center;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+.bgimage {
+    width: 250px;
+}
+
+.bgimage2 {
+    width: 250px;
+}
+
+h1 {
+    color: rgb(11, 41, 131);
+    background: linear-gradient(0deg, rgb(252, 251, 255) 0%, rgb(145, 234, 252) 100%); 
+    font-family: 'comic neue', 'Times New Roman';
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 25px;
+    border: 5px solid;
+    border-color: black;
+    max-width: 1000px;
+}
+
+h2  {
+    background: linear-gradient(0deg, rgb(252, 251, 255) 0%, rgb(145, 234, 252) 100%); 
+    border: 3px solid;
+    border-radius: 15px;
+    font-family: 'comic neue';
+    font-size: 25px;
+    max-width: 1000px;
+}
+
+p {
+    background: linear-gradient(0deg, rgb(252, 251, 255) 0%, rgb(145, 234, 252) 100%); 
+    border: 3px solid;
+    border-radius: 15px;
+    font-family: 'comic neue';
+    font-size: 18px;
+    max-width: 1000px;
+}
+
+a:hover {
+    color: deeppink;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotating:hover {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+  }
+
+footer {
+    display: grid;
+    justify-content: end;
+}
